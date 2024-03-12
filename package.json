@@ -8,6 +8,11 @@
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "start": "remix-serve ./build/server/index.js",
+    "lint": "bunx @biomejs/biome lint ./app",
+    "lint:fix": "bunx @biomejs/biome lint --apply ./app",
+    "lint:unsafe-fix": "bunx @biomejs/biome lint --apply-unsafe ./app",
+    "format": "bunx @biomejs/biome format --write ./app",
+    "format:check": "bunx @biomejs/biome format ./app",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -19,6 +24,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.6.0",
     "@remix-run/dev": "2.8.1",
     "@types/react": "18.2.65",
     "@types/react-dom": "18.2.21",
