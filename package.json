@@ -13,7 +13,9 @@
     "lint:unsafe-fix": "bunx @biomejs/biome lint --apply-unsafe ./app",
     "format": "bunx @biomejs/biome format --write ./app",
     "format:check": "bunx @biomejs/biome format ./app",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@remix-run/node": "2.8.1",
@@ -25,9 +27,19 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.0",
+    "@chromatic-com/storybook": "1.2.18",
     "@remix-run/dev": "2.8.1",
+    "@storybook/addon-essentials": "8.0.0",
+    "@storybook/addon-interactions": "8.0.0",
+    "@storybook/addon-links": "8.0.0",
+    "@storybook/addon-onboarding": "8.0.0",
+    "@storybook/blocks": "8.0.0",
+    "@storybook/react": "8.0.0",
+    "@storybook/react-vite": "8.0.0",
+    "@storybook/test": "8.0.0",
     "@types/react": "18.2.65",
     "@types/react-dom": "18.2.21",
+    "storybook": "8.0.0",
     "typescript": "5.4.2",
     "vite": "5.1.6",
     "vite-tsconfig-paths": "4.3.1",
